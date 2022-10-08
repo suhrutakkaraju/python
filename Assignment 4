@@ -4,8 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "toc_visible": true,
-      "authorship_tag": "ABX9TyMNYTnnG7MuJZ1KkZcogyZf",
+      "authorship_tag": "ABX9TyOdJXOgJzcUKwz7Mm/AdTeQ",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,66 +28,133 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": null,
       "metadata": {
-        "id": "32tYDl5ylQah"
+        "id": "32tYDl5ylQah",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8c736be9-7179-46cb-cdf2-772ef98a8b68"
       },
-      "outputs": [],
-      "source": []
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Celsius_Temprature,Farenheit_Temprature\n",
+            "0 32.0\n",
+            "1 33.8\n",
+            "2 35.6\n",
+            "3 37.4\n",
+            "4 39.2\n",
+            "5 41.0\n",
+            "6 42.8\n",
+            "7 44.6\n",
+            "8 46.4\n",
+            "9 48.2\n",
+            "10 50.0\n",
+            "11 51.8\n",
+            "12 53.6\n",
+            "13 55.400000000000006\n",
+            "14 57.2\n",
+            "15 59.0\n",
+            "16 60.8\n",
+            "17 62.6\n",
+            "18 64.4\n",
+            "19 66.2\n",
+            "20 68.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#E9\n",
+        "#Program to display Celsius to Farenheit table\n",
+        "\n",
+        "Celsius_Temprature = 0;\n",
+        "Farenheit_Temprature = (9/5)*Celsius_Temprature + 32\n",
+        "print(\"Celsius_Temprature,Farenheit_Temprature\")\n",
+        "while(Celsius_Temprature <= 20):\n",
+        "  print(Celsius_Temprature, Farenheit_Temprature)\n",
+        "  Celsius_Temprature = Celsius_Temprature + 1\n",
+        "  Farenheit_Temprature = (9/5)*Celsius_Temprature + 32"
+      ]
     },
     {
       "cell_type": "code",
       "source": [
+        "# E10\n",
+        "# Program to calculate budget \n",
         "\n",
-        "def getExpenses():\n",
-        "   total_amount = 0\n",
-        "   amount = float(input(\"Amount: $\"))\n",
-        "   total_amount += amount\n",
-        "   while(amount !=0):\n",
-        "       amount = float(input(\"Amount: $\"))\n",
-        "       total_amount += amount\n",
-        "   return total_amount\n",
-        "   \n",
         "budget = float(input(\"Enter your monthly budget: $\"))\n",
-        "expenses = getExpenses()\n",
-        "if(budget > expenses):\n",
-        "   print(\"Under budget.\")\n",
+        "total_amount = 0;\n",
+        "amount = float(input(\"Amount (enter zero to finish): $\"));\n",
+        "while(amount !=0):\n",
+        "  amount = float(input(\"Amount (enter zero to finish): $\"))\n",
+        "  total_amount += amount\n",
+        "if(budget > total_amount):\n",
+        "   print(\"Under budget\")\n",
         "else:\n",
-        "   print(\"Over budget.\")\n"
+        "   print(\"Over budget\")"
       ],
       "metadata": {
-        "id": "EJizwjCABi1a",
-        "outputId": "620c716c-0233-4417-e14e-044b90735979",
         "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 398
-        }
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EJizwjCABi1a",
+        "outputId": "6fd09bcd-ab17-4106-82bd-57d6135873bf"
       },
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": [
         {
-          "output_type": "error",
-          "ename": "KeyboardInterrupt",
-          "evalue": "ignored",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
-            "\u001b[0;32m<ipython-input-3-61b808b2753f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      7\u001b[0m        \u001b[0mtotal_amount\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0mamount\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m    \u001b[0;32mreturn\u001b[0m \u001b[0mtotal_amount\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 9\u001b[0;31m \u001b[0mbudget\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Enter your monthly budget: $\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     10\u001b[0m \u001b[0mexpenses\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mgetExpenses\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[0;32mif\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbudget\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0mexpenses\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.7/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m    861\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    862\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_header\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 863\u001b[0;31m             \u001b[0mpassword\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    864\u001b[0m         )\n\u001b[1;32m    865\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.7/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m    902\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    903\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 904\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    905\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    906\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your monthly budget: $500\n",
+            "Amount (enter zero to finish): $50\n",
+            "Amount (enter zero to finish): $50\n",
+            "Amount (enter zero to finish): $300\n",
+            "Amount (enter zero to finish): $0\n",
+            "Under budget\n"
           ]
         }
       ]
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "#E11\n",
+        "#Program to calculate distance\n",
+        "#Take input from user Miles_Per_Hour*Hours_Traveled\n",
+        "\n",
+        "speed_mph = int(input(\"Enter the speed in miles per hour: \"))\n",
+        "travel_time = int(input(\"Enter the Time in hours\"))\n",
+        "i=1\n",
+        "while(i <= travel_time):\n",
+        "  distance = speed_mph * i\n",
+        "  print(\"Distance travelled in \" ,i,\"hours is \", distance)\n",
+        "  i = i+1\n"
+      ],
       "metadata": {
-        "id": "MkII5j16BpmK"
+        "id": "MkII5j16BpmK",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "829b1db8-519c-4fe6-d8a9-3681d15e327c"
       },
-      "execution_count": 3,
-      "outputs": []
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the speed in miles per hour: 40\n",
+            "Enter the Time in hours3\n",
+            "Distance travelled in  1 hours is  40\n",
+            "Distance travelled in  2 hours is  80\n",
+            "Distance travelled in  3 hours is  120\n"
+          ]
+        }
+      ]
     }
   ]
 }
