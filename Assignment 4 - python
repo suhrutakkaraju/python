@@ -1,0 +1,103 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyOxpTFa6DYWvyJ8QmS6TR7n",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/suhrutakkaraju/python/blob/main/Assignment%204%20-%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "32tYDl5ylQah"
+      },
+      "outputs": [],
+      "source": [
+        "E9:\n",
+        "#Problem: Fahrenheit = (( 9/5 )Centigrade)\n",
+        "#Solution\n",
+        "#Begin\n",
+        "# Take test Centigrade input from user\n",
+        "Centigrade = float(input(\"Enter Centigrade\"))\n",
+        "#calculate Farenheight from using Centigrade formula\n",
+        "fahrenheit = (Centigrade*(9/5)) + 32\n",
+        "#print the result\n",
+        "print(\"Fahrenheit is: \", fahrenheit)\n",
+        "#End\n",
+        "\n",
+        "\n",
+        "e10:\n",
+        "def getExpenses():\n",
+        "   total_amount = 0\n",
+        "   amount = float(input(\"Amount: $\"))\n",
+        "   total_amount += amount\n",
+        "   while(amount !=0):\n",
+        "       amount = float(input(\"Amount: $\"))\n",
+        "       total_amount += amount\n",
+        "   return total_amount\n",
+        "budget = float(input(\"Enter your monthly budget: $\"))\n",
+        "expenses = getExpenses()\n",
+        "if(budget > expenses):\n",
+        "   print(\"Under budget.\")\n",
+        "else:\n",
+        "   print(\"Over budget.\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "e11:\n",
+        "\n",
+        "\n",
+        "\n",
+        "g = 'y'\n",
+        "while g == 'Y' or g == 'y':\n",
+        "speed = int(input('Enter mph: '))\n",
+        "time = int(input('Enter hours: '))\n",
+        "\n",
+        "if time <= 0 or speed <= 0:\n",
+        "    print('Invalid Hours and mph must be greater than 0')\n",
+        "else:\n",
+        "    for t in range(time):\n",
+        "        distance = speed * (t+1)        // Use t+1 instead of time\n",
+        "\n",
+        "        print(t + 1,':', distance)\n",
+        "        # time = time * 2              // No need to double the time\n",
+        "\n",
+        "\n",
+        "    g = 'n'\n",
+        "print('End')\n",
+        "\n",
+        "Input: \n",
+        "40\n",
+        "3\n",
+        "\n",
+        "Output:\n",
+        "(1, ':', 40)\n",
+        "(2, ':', 80)\n",
+        "(3, ':', 120)"
+      ]
+    }
+  ]
+}
