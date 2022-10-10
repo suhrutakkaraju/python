@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "metadata": {
         "id": "32tYDl5ylQah",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "8c736be9-7179-46cb-cdf2-772ef98a8b68"
+        "outputId": "b42ff3d2-c697-43c9-a97d-ef1515aed504"
       },
       "outputs": [
         {
@@ -97,27 +97,10 @@
         "   print(\"Over budget\")"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "EJizwjCABi1a",
-        "outputId": "6fd09bcd-ab17-4106-82bd-57d6135873bf"
+        "id": "EJizwjCABi1a"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Enter your monthly budget: $500\n",
-            "Amount (enter zero to finish): $50\n",
-            "Amount (enter zero to finish): $50\n",
-            "Amount (enter zero to finish): $300\n",
-            "Amount (enter zero to finish): $0\n",
-            "Under budget\n"
-          ]
-        }
-      ]
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -141,7 +124,7 @@
         },
         "outputId": "829b1db8-519c-4fe6-d8a9-3681d15e327c"
       },
-      "execution_count": 22,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
